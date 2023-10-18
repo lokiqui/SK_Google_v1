@@ -1,6 +1,6 @@
 <div class="form">
   <div class="form__container">
-    <h1>Log in</h1>
+    <h1>Log in - Sky Practice</h1>
     <form [formGroup]="form" (ngSubmit)="logIn()">
       <div>
         <mat-form-field>
@@ -12,7 +12,7 @@
 
       <div>
         <mat-form-field>
-          <mat-label>Enter your password</mat-label>
+          <mat-label>Ingrese su contraseña</mat-label>
           <input
             matInput
             [type]="hide ? 'password' : 'text'"
@@ -27,7 +27,7 @@
           >
             <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
           </button>
-          <mat-error>This field is required</mat-error>
+          <mat-error>Este campo es obligatorio</mat-error>
         </mat-form-field>
       </div>
 
@@ -36,11 +36,11 @@
       </div>
     </form>
     <hr />
-    <span class="small-text providers">Have Google or GitHub?</span>
+    <span class="small-text providers">¿Tienes Google o GitHub?</span>
     <app-button-providers [isLogin]="true" />
     <span class="small-text log-in-redirect"
-      >Don’t have an account yet?
-      <a routerLink="/auth/sign-up">Sign up</a></span
+      >¿Aún no tienes una cuenta?
+      <a routerLink="/auth/sign-up">Inscribirse</a></span
     >
   </div>
 </div>

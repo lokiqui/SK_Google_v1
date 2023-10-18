@@ -68,8 +68,8 @@ export default class LogInComponent {
 
     if (isInvalid) {
       return control.hasError('required')
-        ? 'This field is required'
-        : 'Enter a valid email';
+        ? 'Este campo es obligatorio'
+        : 'Introduzca un correo electrónico válido';
     }
 
     return false;
@@ -96,7 +96,7 @@ export default class LogInComponent {
   }
 
   openSnackBar() {
-    return this._snackBar.open('Succesfully Log in 😀', 'Close', {
+    return this._snackBar.open('Iniciaste sesión exitosamente 😀', 'Close', {
       duration: 2500,
       verticalPosition: 'top',
       horizontalPosition: 'end',
